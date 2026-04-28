@@ -1,0 +1,61 @@
+
+body {
+    position: static;
+    background-color: #f9dde3;
+
+}
+
+/*paragraph genaral style*/
+p.moved {
+    background-color: pink;
+    width: 60%;
+    margin: 40px auto;
+}
+
+
+
+/*relative positionering*/
+p.moved1 {
+    position: relative;
+    top: 40px;
+    left: 140px;
+    margin: 160px;
+}
+
+/*absolute positionering*/
+p.moved2 {
+    position: absolute;
+    border: 4px dotted red;
+    top: 40px;
+    left: 80px;
+    z-index: 0 ;
+}
+/*making sure scrilling is visible*/
+section {
+    min-height: 400px; /* just to make scrolling visible */
+}
+
+/*sticky positionering*/
+/*Sticky scrolt mee alsof het een normaal element is,
+tot het de offset bereikt*/
+h2 {
+    position: sticky;
+    background: green;
+    color: white;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+/*fixed positionering*/
+/*ten opzichte van de browserscherm*/
+header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #C84E80;
+    color: white;
+    z-index: 1;
+}
